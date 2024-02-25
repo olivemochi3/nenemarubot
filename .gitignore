@@ -1,0 +1,3 @@
+# .gitignoreの内容例
+.env
+node_modules/
