@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+
 const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({
     intents: [
@@ -18,4 +21,6 @@ client.on('guildMemberRemove', member => {
     });
 });
 
-client.login('MTxMTI1ODcyODk5NzcxNTk5OA.G12oAW.eSq02T0qye94Y8iUY0Nq0C4_RG8y1giWgOIdL0');
+client.login(process.env.DISCORD_BOT_TOKEN);
+
+
